@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Due North — Apps</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0a0a0c; color: #e8e0d4;
+    font-family: Georgia, 'Times New Roman', serif;
+    min-height: 100vh; display: flex; flex-direction: column;
+    align-items: center; padding: 48px 20px;
+  }
+  .ember {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: #ff6b35; margin-bottom: 28px;
+    box-shadow: 0 0 24px 6px rgba(255,107,53,.45);
+    animation: breathe 4s ease-in-out infinite;
+  }
+  @keyframes breathe { 0%,100% { opacity:.55; } 50% { opacity:1; } }
+  h1 { font-size: 1.6rem; letter-spacing: .35em; text-transform: uppercase; margin-bottom: 10px; }
+  .sub { color: #8a8078; font-style: italic; margin-bottom: 48px; font-size: .95rem; }
+  .apps { display: flex; flex-direction: column; gap: 18px; width: 100%; max-width: 420px; }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    border: 1px solid #2a2521; border-radius: 10px; padding: 22px;
+    background: #111013; transition: border-color .25s, transform .25s;
+  }
+  a.card:hover { border-color: #ff6b35; transform: translateY(-2px); }
+  .card h2 { font-size: 1.15rem; margin-bottom: 8px; color: #f5ede0; }
+  .card p { font-size: .88rem; color: #8a8078; line-height: 1.5; }
+  .tag {
+    display: inline-block; font-size: .68rem; letter-spacing: .2em; text-transform: uppercase;
+    color: #ff6b35; border: 1px solid #ff6b35; border-radius: 20px;
+    padding: 3px 12px; margin-bottom: 12px; font-family: Arial, sans-serif;
+  }
+  footer { margin-top: 56px; color: #4a453f; font-size: .8rem; font-style: italic; }
+</style>
+</head>
+<body>
+  <div class="ember"></div>
+  <h1>Due North</h1>
+  <div class="sub">built to stay with us</div>
+  <div class="apps">
+    <a class="card" href="nxp4-forge.html">
+      <span class="tag">Language</span>
+      <h2>NXP4 Forge</h2>
+      <p>Write in your own words. The forge turns it into NXP4, runs it, seals it in the vault.</p>
+    </a>
+    <a class="card" href="northern-law.html">
+      <span class="tag">Law Toolkit</span>
+      <h2>Northern Law</h2>
+      <p>Find forms, build documents, analyze papers, sign, journal — seven rooms, all offline.</p>
+    </a>
+    <a class="card" href="dust-sweeper.html">
+      <span class="tag">Crypto</span>
+      <h2>DUSTSWEEP</h2>
+      <p>Scan your wallets across six chains, find the dust that's yours, sweep it home.</p>
+    </a>
+  </div>
+  <footer>Legal information, not legal advice. Not a lawyer.</footer>
+</body>
+</html>
